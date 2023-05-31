@@ -1,0 +1,29 @@
+maak grootte (50) %
+herhaal (3)
+  herhaal (10)
+    verander grootte met (5)
+  end
+  herhaal (10)
+    verander grootte met (-5)
+  end
+end
+
+wanneer ik signaal (verloren v) ontvang
+als <(uiterlijk (naam v)) = [streep]> dan
+  verander uiterlijk naar (voeg [Block-] en (mijnletter) samen)
+  verander [helderheid v] effect met (-50)
+  wacht (willekeurig getal tussen (2) en (10)) sec.
+  herhaal tot <(y-positie) < (-80)>
+    verander y met (-10)
+	draai@turnRight (willekeurig getal tussen (-20) en (20)) graden
+  end
+end
+
+wanneer op deze sprite wordt geklikt
+volgend uiterlijk
+zeg (voeg [klinkers zijn nu ] en (uiterlijk[naam v]) samen) (2) sec.
+
+als <<[aeiuo] bevat (antwoord) ?> en <([naam uiterlijk v] van (klinkers v)) = [verboden]>> dan
+  zeg [je mag geen klinkers raden) (2) sec.
+anders
+end

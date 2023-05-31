@@ -1,0 +1,15 @@
+wanneer groene vlag wordt aangeklikt
+vraag [welk woord wil je tonen] en wacht
+maak [woord v] (antwoord)
+ga naar x: (-200) y: (100)
+maak [i v] (0)
+herhaal (lengte van (woord))
+  verander [i v] met (1)
+  maak [mijnletter v] (letter (i) van (woord))
+  maak een kloon van (mezelf v)
+  verander x met (30)
+end
+
+wanneer ik als kloon start
+verander uiterlijk naar (voeg [Block-] en (mijnletter) samen
+verschijn

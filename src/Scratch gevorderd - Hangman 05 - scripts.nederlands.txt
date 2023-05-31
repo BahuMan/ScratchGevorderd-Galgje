@@ -1,0 +1,23 @@
+wanneer groene vlag wordt aangeklikt
+richt naar (90) graden
+verander uiterlijk naar [Block-streep v]
+maak grootte (50) %
+verdwijn
+maak [woord v] (item (willekeurig getal tussen (1) en (lengte van [woorden v])) van [woorden v]
+ga naar x: (-200) y: (100)
+maak [i v] (0)
+herhaal (lengte van (woord))
+  verander [i v] met (1)
+  maak [mijnletter v] (letter (i) van (woord))
+  maak een kloon van (mezelf v)
+  verander x met (30)
+end
+
+wanneer ik als kloon start
+verander uiterlijk naar (voeg [Block-] en (mijnletter) samen
+verschijn
+
+wanneer ik signaal [toonletter v] ontvang
+als <(mijnletter) = (antwoord)> dan
+  verander uiterlijk naar (voeg [Block-] en (mijnletter) samen)
+  maak [gevonden v] (1)
